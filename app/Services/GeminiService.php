@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Log;
 class GeminiService
 {
     protected $apiKey;
-    protected $apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent';
+    protected $apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent';
 
     public function __construct()
     {
@@ -60,10 +60,11 @@ class GeminiService
 - Target Audience: {$data['target_audience']}
 - Price: {$data['price']}
 - Unique Selling Points: {$data['selling_points']}
+- Design Style: {$data['design_style']}
 
 Requirements for the output:
 1. ONLY output valid HTML code. Do NOT wrap it in markdown blockquotes like ```html.
-2. The HTML MUST include inline CSS or Tailwind CSS utility classes (assume CDN is loaded) for styling. Use a modern, beautiful, and premium design aesthetic (e.g., modern gradients, clean typography, shadow, rounded corners).
+2. The HTML MUST include inline CSS or Tailwind CSS utility classes (assume CDN is loaded) for styling. Use a {$data['design_style']} design aesthetic. Ensure the color palette, typography, spacing, and shadows perfectly match the {$data['design_style']} theme.
 3. Structure the page with:
    - A compelling Headline and Sub-headline.
    - A Product Description section.
