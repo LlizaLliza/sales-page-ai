@@ -62,6 +62,18 @@
                             <x-input-error :messages="$errors->get('selling_points')" class="mt-2" />
                         </div>
 
+                        <!-- Design Style -->
+                        <div class="mt-4">
+                            <x-input-label for="design_style" :value="__('Design Style / Template')" />
+                            <select id="design_style" name="design_style" class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full" required>
+                                <option value="Minimalist" {{ old('design_style', $salesPage->design_style) == 'Minimalist' ? 'selected' : '' }}>Minimalist & Clean</option>
+                                <option value="Dark & Futuristic" {{ old('design_style', $salesPage->design_style) == 'Dark & Futuristic' ? 'selected' : '' }}>Dark & Futuristic (Cyberpunk)</option>
+                                <option value="Corporate Blue" {{ old('design_style', $salesPage->design_style) == 'Corporate Blue' ? 'selected' : '' }}>Corporate Blue (Professional)</option>
+                                <option value="Vibrant & Playful" {{ old('design_style', $salesPage->design_style) == 'Vibrant & Playful' ? 'selected' : '' }}>Vibrant & Playful (Colorful)</option>
+                            </select>
+                            <x-input-error :messages="$errors->get('design_style')" class="mt-2" />
+                        </div>
+
                         <div class="flex items-center justify-end mt-6">
                             <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('sales-pages.show', $salesPage) }}">
                                 {{ __('Cancel') }}

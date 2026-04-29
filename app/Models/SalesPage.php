@@ -14,6 +14,7 @@ class SalesPage extends Model
         'target_audience',
         'price',
         'selling_points',
+        'design_style',
         'generated_html',
     ];
 

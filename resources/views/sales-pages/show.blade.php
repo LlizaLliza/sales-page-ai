@@ -64,7 +64,10 @@
                             <p class="mb-3">{{ $salesPage->features }}</p>
 
                             <p class="text-sm font-semibold text-gray-500">Selling Points</p>
-                            <p class="mb-3">{{ $salesPage->selling_points ?: '-' }}</p>
+                            <ul>
+                                <li><strong>USP:</strong> {{ $salesPage->selling_points ?? '-' }}</li>
+                                <li><strong>Design Style:</strong> <span class="px-2 py-1 bg-indigo-100 text-indigo-700 rounded-md text-xs font-bold">{{ $salesPage->design_style ?? 'Minimalist' }}</span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

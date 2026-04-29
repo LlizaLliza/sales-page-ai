@@ -28,6 +28,7 @@ class SalesPageController extends Controller
             'target_audience' => 'required|string|max:255',
             'price' => 'required|string|max:255',
             'selling_points' => 'nullable|string',
+            'design_style' => 'required|string|in:Minimalist,Dark & Futuristic,Corporate Blue,Vibrant & Playful',
         ]);
 
         // Validate API Key exists
@@ -87,6 +88,7 @@ class SalesPageController extends Controller
             'target_audience' => 'required|string|max:255',
             'price' => 'required|string|max:255',
             'selling_points' => 'nullable|string',
+            'design_style' => 'required|string|in:Minimalist,Dark & Futuristic,Corporate Blue,Vibrant & Playful',
         ]);
 
         // Validate API Key exists
