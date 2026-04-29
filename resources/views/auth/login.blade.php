@@ -66,9 +66,9 @@
     <!-- Register Link -->
     <div class="mt-8 pt-6 border-t border-slate-700/50 text-center">
         <p class="text-sm text-slate-400">
-            Belum punya akun? 
+            Don't have an account? 
             <a href="{{ route('register') }}" class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 hover:from-blue-300 hover:to-cyan-200 ml-1 drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]">
-                Daftar Sekarang
+                Register Now
             </a>
         </p>
     </div>
