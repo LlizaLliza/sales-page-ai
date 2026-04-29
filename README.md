@@ -7,9 +7,10 @@ An AI-powered web application built with **Laravel 11** and the **Google Gemini 
 
 ## ✨ Features
 - **User Authentication**: Secure login and registration using Laravel Breeze.
-- **AI Generation**: Leverages `gemini-2.5-flash` to instantly generate complete HTML landing pages with compelling copywriting.
+- **AI Generation**: Leverages `gemini-2.5-flash-lite` (chosen for being lightweight, fast, and avoiding high-demand queues) to instantly generate complete HTML landing pages with compelling copywriting.
+- **Multiple Design Templates**: Users can choose from various aesthetics (Minimalist, Cyberpunk, Corporate, Vibrant) to dynamically style the AI output.
 - **Modern UI Styling**: AI is instructed to return ready-to-use HTML embedded with Tailwind CSS classes.
-- **Live Preview & History**: View past generated sales pages, preview them dynamically, and delete them if needed.
+- **Live Preview & History**: View past generated sales pages, preview them dynamically, edit (re-generate) them with new prompts, and delete them if needed.
 - **HTML Export**: Download the generated sales page as a standalone `.html` file.
 
 ## 🛠️ Technology Stack
