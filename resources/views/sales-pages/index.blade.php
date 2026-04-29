@@ -63,6 +63,7 @@
                                             </td>
                                             <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                                                 <a href="{{ route('sales-pages.show', $page) }}" class="text-indigo-600 hover:text-indigo-900 mr-3">Preview</a>
+                                                <a href="{{ route('sales-pages.edit', $page) }}" class="text-yellow-600 hover:text-yellow-900 mr-3">Edit</a>
                                                 <form action="{{ route('sales-pages.destroy', $page) }}" method="POST" class="inline-block" onsubmit="return confirm('Are you sure you want to delete this?');">
                                                     @csrf
                                                     @method('DELETE')
